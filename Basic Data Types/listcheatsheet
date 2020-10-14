@@ -1,0 +1,109 @@
+#Complete List Cheet Sheet
+
+#Making a List basically has square brackets
+lis = [1,2,3,4,5,6,7,8]
+
+#Printing all elements in the list
+print(lis)
+
+#Printing particular element of list - Indexing starts with 0 in python same alike other languages
+print(lis[0])
+
+#Python is having negative indexing so you can reverse elements by just using python inbuilt functions
+print(lis[-1])
+
+#The search will start at index 2 (included) and end at index 5 (not included).
+print(lis[2:5])
+
+#This will print items from beginning to the mentioned index (mentioned index postion will be excluded)
+print(lis[:3])
+
+#This will print items from the mentioned position to the end
+print(lis[3:])
+
+#Priting the items in list in reverse order
+print(lis[::-1])
+
+#Changing the item in list
+lis[0] = "Djcodes"
+print(lis)
+
+list1 = ["Deep","Joshi",27,02.01] # A list can be made like !!! this list is mutable and items can be changed
+
+list1.append("List Example") # To Append the item at the last index in list we can use append method
+
+print(list1) # After Appending the list result
+
+list2 = list1.copy() #Copy function is used to copy data from list to another one
+
+print(list2) # Copied List Data
+
+print(list1.count(27)) # It Returns how many times element is present in list
+
+print(list1.index(02.01)) # Returns the index position of element passed in the function
+
+list1.insert(4,"Djcodes") #For Inserting Element at given positon along with passing the value
+
+print(list1) #Djcodes Inserted at 4th position
+#Here looking onto append function as the value we added with append function was pushed by 1 index position
+
+list1.pop(5) #Removes value of given index position
+
+print(list1) #As a result 'List Example' was removed
+#You can also use remove function to remove an element with its value
+list1.remove("Djcodes")
+
+print(list1) #Djcodes will be removed from output
+
+
+'''
+To Reverse a List its very Easy in python (Note : You only have to use same data types for reverseing else 
+it will generate an error)
+'''
+
+list3 = [3,6,8,4,9,1,0]
+list3.sort()
+print(list3)
+
+list1.extend([9, 11, 13])
+
+print(list1) #Above Elements will be added to list after te last element
+
+print(["Dj"] * 3) # For Printing list Multiple times
+
+print(list1+list2) # + is used for concatenation
+
+#Priting Elements of List
+list4 = ["Deep" , "Joshi" , "Djcodes"]
+
+for x in list4:
+    print("I am : "+x)
+
+
+'''
+Output : 
+[1, 2, 3, 4, 5, 6, 7, 8]
+1
+8
+[3, 4, 5]
+[1, 2, 3]
+[4, 5, 6, 7, 8]
+[8, 7, 6, 5, 4, 3, 2, 1]
+['Djcodes', 2, 3, 4, 5, 6, 7, 8]
+['Deep', 'Joshi', 27, 2.01, 'List Example']
+['Deep', 'Joshi', 27, 2.01, 'List Example']
+1
+3
+['Deep', 'Joshi', 27, 2.01, 'Djcodes', 'List Example']
+['Deep', 'Joshi', 27, 2.01, 'Djcodes']
+['Deep', 'Joshi', 27, 2.01]
+[0, 1, 3, 4, 6, 8, 9]
+['Deep', 'Joshi', 27, 2.01, 9, 11, 13]
+['Dj', 'Dj', 'Dj']
+['Deep', 'Joshi', 27, 2.01, 9, 11, 13, 'Deep', 'Joshi', 27, 2.01, 'List Example']
+I am : Deep
+I am : Joshi
+I am : Djcodes
+
+
+'''
